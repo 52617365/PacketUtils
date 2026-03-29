@@ -133,6 +133,9 @@ public class PacketReflection {
         }
         getPacketBufferNode.setAccessible(false);
         List<String> params = null;
+        if (def.type == PacketType.SET_HEADING) {
+            params = List.of("orientation");
+        }
         if (def.type == PacketType.RESUME_NAMEDIALOG || def.type == PacketType.RESUME_STRINGDIALOG) {
             params = List.of("length", "string");
         }
@@ -155,16 +158,16 @@ public class PacketReflection {
             params = List.of("widgetId", "slot", "itemId", "opCode");
         }
         if (def.type == PacketType.OPLOC) {
-            params = List.of("objectId", "worldPointX", "worldPointY", "ctrlDown");
+            params = List.of("objectId", "worldPointX", "worldPointY", "ctrlDown", "subop");
         }
         if (def.type == PacketType.OPNPC) {
-            params = List.of("npcIndex", "ctrlDown");
+            params = List.of("npcIndex", "ctrlDown", "subop");
         }
         if (def.type == PacketType.OPPLAYER) {
             params = List.of("playerIndex", "ctrlDown");
         }
         if (def.type == PacketType.OPOBJ) {
-            params = List.of("objectId", "worldPointX", "worldPointY", "ctrlDown");
+            params = List.of("objectId", "worldPointX", "worldPointY", "ctrlDown", "subop");
         }
         if (def.type == PacketType.OPOBJT) {
             params = List.of("objectId", "worldPointX", "worldPointY", "slot", "itemId", "widgetId",
