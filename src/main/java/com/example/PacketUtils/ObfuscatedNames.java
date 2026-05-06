@@ -1,30 +1,31 @@
 package com.example.PacketUtils;
 
-public final class ObfuscatedNames {
+public final class ObfuscatedNames
+{
 
-    public static final String EVENT_MOUSE_CLICK_OBFUSCATEDNAME = "eg";
+    public static final String EVENT_MOUSE_CLICK_OBFUSCATEDNAME = "ds";
     public static final String EVENT_MOUSE_CLICK_WRITE1 = "mouseX";
-    public static final String EVENT_MOUSE_CLICK_METHOD_NAME1 = "eb";
-    public static final String EVENT_MOUSE_CLICK_WRITE2 = "0";
-    public static final String EVENT_MOUSE_CLICK_METHOD_NAME2 = "di";
-    public static final String EVENT_MOUSE_CLICK_WRITE3 = "mouseInfo";
-    public static final String EVENT_MOUSE_CLICK_METHOD_NAME3 = "eb";
-    public static final String EVENT_MOUSE_CLICK_WRITE4 = "mouseY";
+    public static final String EVENT_MOUSE_CLICK_METHOD_NAME1 = "ed";
+    public static final String EVENT_MOUSE_CLICK_WRITE2 = "mouseY";
+    public static final String EVENT_MOUSE_CLICK_METHOD_NAME2 = "ko";
+    public static final String EVENT_MOUSE_CLICK_WRITE3 = "0";
+    public static final String EVENT_MOUSE_CLICK_METHOD_NAME3 = "dq";
+    public static final String EVENT_MOUSE_CLICK_WRITE4 = "mouseInfo";
     public static final String EVENT_MOUSE_CLICK_METHOD_NAME4 = "bw";
     public static final String[][] EVENT_MOUSE_CLICK_WRITES = new String[][]{
-            {"v", "r 8"},
-            {"s 0"},
-            {"v", "r 8"},
+            {"r 8", "a 128"},
+            {"a 128", "r 8"},
+            {"v"},
             {"r 8", "v"},
     };
     public static final String IF_BUTTONT_OBFUSCATEDNAME = "ew";
     public static final String IF_BUTTONT_WRITE1 = "destinationWidgetId";
     public static final String IF_BUTTONT_METHOD_NAME1 = "az";
-    public static final String IF_BUTTONT_WRITE2 = "sourceSlot";
+    public static final String IF_BUTTONT_WRITE2 = "sourceWidgetId";
     public static final String IF_BUTTONT_METHOD_NAME2 = "ed";
     public static final String IF_BUTTONT_WRITE3 = "sourceItemId";
     public static final String IF_BUTTONT_METHOD_NAME3 = "ko";
-    public static final String IF_BUTTONT_WRITE4 = "sourceWidgetId";
+    public static final String IF_BUTTONT_WRITE4 = "sourceSlot";
     public static final String IF_BUTTONT_METHOD_NAME4 = "ek";
     public static final String IF_BUTTONT_WRITE5 = "destinationSlot";
     public static final String IF_BUTTONT_METHOD_NAME5 = "bw";
@@ -34,7 +35,7 @@ public final class ObfuscatedNames {
             {"r 24", "r 16", "r 8", "v"},
             {"r 8", "a 128"},
             {"a 128", "r 8"},
-            {"r 8", "v", "r 24", "r 16"},
+            {"r 8", "v", "r 16", "r 24"},
             {"r 8", "v"},
             {"a 128", "r 8"},
     };
@@ -84,9 +85,23 @@ public final class ObfuscatedNames {
             {"v"},
             {"v", "r 8"},
             {"r 8", "v"},
-            {"s 0"},
+            {"v"},
     };
-
+    public static final String OPHELDD_OBFUSCATEDNAME = "bb";
+    public static final String OPHELDD_WRITE1 = "selectedId"; // cj
+    public static final String OPHELDD_WRITE2 = "selectedChildIndex"; // eb
+    public static final String OPHELDD_WRITE3 = "destId"; //az
+    public static final String OPHELDD_WRITE4 = "selectedItemId"; // eb
+    public static final String OPHELDD_WRITE5 = "destItemId"; // ko
+    public static final String OPHELDD_WRITE6 = "destChildIndex"; // ed
+    public static final String[][] OPHELDD_WRITES = new String[][]{
+            {"r 16", "r 24", "v", "r 8"},
+            {"v", "r 8",},
+            {"r 24", "r 16", "r 8", "v",},
+            {"v", "r 8",},
+            {"a 128", "r 8",},
+            {"r 8", "a 128",},
+    };
     public static final String OPLOC1_OBFUSCATEDNAME = "af";
     public static final String OPLOC1_WRITE1 = "objectId";
     public static final String OPLOC1_METHOD_NAME1 = "ko";
@@ -179,12 +194,19 @@ public final class ObfuscatedNames {
     };
     public static final String OPLOCT_OBFUSCATEDNAME = "di";
     public static final String OPLOCT_WRITE1 = "worldPointY";
+    public static final String OPLOCT_METHOD_NAME1 = "bw";
     public static final String OPLOCT_WRITE2 = "worldPointX";
-    public static final String OPLOCT_WRITE3 = "slot";
+    public static final String OPLOCT_METHOD_NAME2 = "eb";
+    public static final String OPLOCT_WRITE3 = "widgetId";
+    public static final String OPLOCT_METHOD_NAME3 = "bw";
     public static final String OPLOCT_WRITE4 = "itemId";
-    public static final String OPLOCT_WRITE5 = "widgetId";
+    public static final String OPLOCT_METHOD_NAME4 = "eb";
+    public static final String OPLOCT_WRITE5 = "slot";
+    public static final String OPLOCT_METHOD_NAME5 = "tv";
     public static final String OPLOCT_WRITE6 = "ctrlDown";
+    public static final String OPLOCT_METHOD_NAME6 = "dn";
     public static final String OPLOCT_WRITE7 = "objectId";
+    public static final String OPLOCT_METHOD_NAME7 = "bw";
     public static final String[][] OPLOCT_WRITES = new String[][]{
             {"r 8", "v"},
             {"v", "r 8"},
@@ -259,11 +281,11 @@ public final class ObfuscatedNames {
     public static final String OPNPCT_METHOD_NAME1 = "ko";
     public static final String OPNPCT_WRITE2 = "itemId";
     public static final String OPNPCT_METHOD_NAME2 = "ed";
-    public static final String OPNPCT_WRITE3 = "widgetId";
+    public static final String OPNPCT_WRITE3 = "slot";
     public static final String OPNPCT_METHOD_NAME3 = "tv";
     public static final String OPNPCT_WRITE4 = "ctrlDown";
     public static final String OPNPCT_METHOD_NAME4 = "di";
-    public static final String OPNPCT_WRITE5 = "slot";
+    public static final String OPNPCT_WRITE5 = "widgetId";
     public static final String OPNPCT_METHOD_NAME5 = "ko";
     public static final String[][] OPNPCT_WRITES = new String[][]{
             {"a 128", "r 8"},
@@ -364,12 +386,19 @@ public final class ObfuscatedNames {
     };
     public static final String OPOBJT_OBFUSCATEDNAME = "cj";
     public static final String OPOBJT_WRITE1 = "ctrlDown";
-    public static final String OPOBJT_WRITE2 = "widgetId";
+    public static final String OPOBJT_METHOD_NAME1 = "di";
+    public static final String OPOBJT_WRITE2 = "ctrlDown";
+    public static final String OPOBJT_METHOD_NAME2 = "ek";
     public static final String OPOBJT_WRITE3 = "itemId";
+    public static final String OPOBJT_METHOD_NAME3 = "eb";
     public static final String OPOBJT_WRITE4 = "objectId";
+    public static final String OPOBJT_METHOD_NAME4 = "eb";
     public static final String OPOBJT_WRITE5 = "worldPointX";
+    public static final String OPOBJT_METHOD_NAME5 = "ed";
     public static final String OPOBJT_WRITE6 = "worldPointY";
-    public static final String OPOBJT_WRITE7 = "slot";
+    public static final String OPOBJT_METHOD_NAME6 = "ko";
+    public static final String OPOBJT_WRITE7 = "widgetId";
+    public static final String OPOBJT_METHOD_NAME7 = "ed";
     public static final String[][] OPOBJT_WRITES = new String[][]{
             {"s 0"},
             {"r 8", "v", "r 24", "r 16"},
@@ -454,9 +483,9 @@ public final class ObfuscatedNames {
     public static final String OPPLAYERT_OBFUSCATEDNAME = "am";
     public static final String OPPLAYERT_WRITE1 = "playerIndex";
     public static final String OPPLAYERT_METHOD_NAME1 = "ko";
-    public static final String OPPLAYERT_WRITE2 = "widgetId";
+    public static final String OPPLAYERT_WRITE2 = "slot";
     public static final String OPPLAYERT_METHOD_NAME2 = "tv";
-    public static final String OPPLAYERT_WRITE3 = "slot";
+    public static final String OPPLAYERT_WRITE3 = "widgetId";
     public static final String OPPLAYERT_METHOD_NAME3 = "ed";
     public static final String OPPLAYERT_WRITE4 = "ctrlDown";
     public static final String OPPLAYERT_METHOD_NAME4 = "dn";
@@ -469,42 +498,30 @@ public final class ObfuscatedNames {
             {"s 128"},
             {"r 8", "v"},
     };
-
-    public static final String OPHELDD_OBFUSCATEDNAME = "bb";
-    public static final String OPHELDD_WRITE1 = "selectedId";
-    public static final String OPHELDD_METHOD_NAME1 = "cj";
-    public static final String OPHELDD_WRITE2 = "selectedChildIndex";
-    public static final String OPHELDD_METHOD_NAME2 = "eb";
-    public static final String OPHELDD_WRITE3 = "destId";
-    public static final String OPHELDD_METHOD_NAME3 = "az";
-    public static final String OPHELDD_WRITE4 = "selectedItemId";
-    public static final String OPHELDD_METHOD_NAME4 = "eb";
-    public static final String OPHELDD_WRITE5 = "destItemId";
-    public static final String OPHELDD_METHOD_NAME5 = "ko";
-    public static final String OPHELDD_WRITE6 = "destChildIndex";
-    public static final String OPHELDD_METHOD_NAME6 = "ed";
-    public static final String[][] OPHELDD_WRITES = new String[][] {
-            {"r 16", "r 24", "v", "r 8"},
-            {"v", "r 8"},
-            {"r 24", "r 16", "r 8", "v"},
-            {"v", "r 8"},
-            {"a 128", "r 8"},
-            {"r 8", "a 128"},
-    };
-
-    public static final String SET_HEADING_OBFUSCATEDNAME = "df";
-    public static final String SET_HEADING_WRITE1 = "orientation";
-    public static final String SET_HEADING_METHOD_NAME1 = "di";
-    public static final String[][] SET_HEADING_WRITES = new String[][] {
-            {"s 0"}
-    };
-
     public static final String RESUME_COUNTDIALOG_OBFUSCATEDNAME = "do";
     public static final String RESUME_COUNTDIALOG_WRITE1 = "var0";
     public static final String RESUME_COUNTDIALOG_METHOD_NAME1 = "az";
     public static final String[][] RESUME_COUNTDIALOG_WRITES = new String[][]{
             {"r 24", "r 16", "r 8", "v"},
     };
+    // {"r 8", "v"},
+
+    public static final String RESUME_NAMEDIALOG_OBFUSCATEDNAME = "bz";
+    public static final String RESUME_NAMEDIALOG_WRITE1 = "length";
+    public static final String RESUME_NAMEDIALOG_METHOD_NAME1 = "writeByte";
+    public static final String RESUME_NAMEDIALOG_WRITE2 = "string";
+    public static final String RESUME_NAMEDIALOG_METHOD_NAME2 = "writeStringCp1252NullTerminated";
+    public static final String[][] RESUME_NAMEDIALOG_WRITES = new String[][] {
+            {"v"},
+            {"strn"},
+    };
+    public static final String RESUME_OBJDIALOG_OBFUSCATEDNAME = "ex";
+    public static final String RESUME_OBJDIALOG_WRITE1 = "var0";
+    public static final String RESUME_OBJDIALOG_METHOD_NAME1 = "bw";
+    public static final String[][] RESUME_OBJDIALOG_WRITES = new String[][]{
+            {"r 8", "v"},
+    };
+
     public static final String RESUME_PAUSEBUTTON_OBFUSCATEDNAME = "bu";
     public static final String RESUME_PAUSEBUTTON_WRITE1 = "var0";
     public static final String RESUME_PAUSEBUTTON_METHOD_NAME1 = "cj";
@@ -514,40 +531,25 @@ public final class ObfuscatedNames {
             {"r 16", "r 24", "v", "r 8"},
             {"a 128", "r 8"},
     };
-
-    public static final String RESUME_OBJDIALOG_OBFUSCATEDNAME = "ex";
-    public static final String RESUME_OBJDIALOG_WRITE1 = "var0";
-    public static final String RESUME_OBJDIALOG_METHOD_NAME1 = "bw";
-    public static final String[][] RESUME_OBJDIALOG_WRITES = new String[][]{
-            {"r 8", "v"},
-    };
-
-    public static final String RESUME_NAMEDIALOG_OBFUSCATED_NAME = "bz";
-    public static final String RESUME_NAMEDIALOG_WRITE1 = "length";
-    public static final String RESUME_NAMEDIALOG_METHOD_NAME1 = "dq";
-    public static final String RESUME_NAMEDIALOG_WRITE2 = "string";
-    public static final String RESUME_NAMEDIALOG_METHOD_NAME2 = "cc";
-    public static final String[][] RESUME_NAMEDIALOG_WRITES = new String[][] {
-            {"v"},
-            {"strn"},
-    };
-
-    public static final String RESUME_STRINGDIALOG_OBFUSCATED_NAME = "cd";
+    public static final String RESUME_STRINGDIALOG_OBFUSCATEDNAME = "cd";
     public static final String RESUME_STRINGDIALOG_WRITE1 = "length";
-    public static final String RESUME_STRINGDIALOG_METHOD_NAME1 = "dq";
+    public static final String RESUME_STRINGDIALOG_METHOD_NAME1 = "writeByte";
     public static final String RESUME_STRINGDIALOG_WRITE2 = "string";
-    public static final String RESUME_STRINGDIALOG_METHOD_NAME2 = "cc";
+    public static final String RESUME_STRINGDIALOG_METHOD_NAME2 = "writeStringCp1252NullTerminated";
     public static final String[][] RESUME_STRINGDIALOG_WRITES = new String[][] {
             {"v"},
             {"strn"},
     };
-
-
+    public static final String SET_HEADING_OBFUSCATEDNAME = "df";
+    public static final String SET_HEADING_WRITE1 = "orientation";
+    public static final String SET_HEADING_METHOD_NAME1 = "di";
+    public static final String[][] SET_HEADING_WRITES = new String[][]{
+            {"s 0"},
+    };
     public static final String offsetMultiplier = "228932457";
     public static final String indexMultiplier = "-661977895";
-    public static final String addNodeGarbageValue = "50000";
-
-    public static final String getPacketBufferNodeGarbageValue = "34";
+    public static final String addNodeGarbageValue = "-2131500547";
+    public static final String getPacketBufferNodeGarbageValue = "-124";
     public static final String packetWriterFieldName = "aq";
     public static final String isaacCipherFieldName = "av";
     public static final String addNodeMethodName = "az";
@@ -560,13 +562,12 @@ public final class ObfuscatedNames {
     public static final String bufferArrayField = "al";
     public static final String MouseHandler_lastPressedTimeMillisClass = "tj";
     public static final String MouseHandler_lastPressedTimeMillisField = "af";
-    public static final String clientMillisField = "gx";
-    public static final String mouseHandlerMillisMultiplier = "-1467961146437295031";
+    public static final String mouseHandlerMillisMultiplier = "3767455460529623151";
     public static final String clientMillisMultiplier = "-6682804461438542089";
-    public static final int getAnimationMultiplier = 1389085133;
+    public static final String clientMillisField = "gx";
+    public static final int getAnimationMultiplier = 685222699;
     public static final int skullIconMultiplier = 0;
     public static final String skullIconField = "null";
-    public static final String pathLengthFieldName = "null";
     public static final int pathLengthMultiplier = 0;
     public static final String doActionClassName = "qd";
     public static final String doActionMethodName = "fa";
